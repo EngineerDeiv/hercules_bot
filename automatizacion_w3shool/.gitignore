@@ -3,3 +3,14 @@
 
 # Ignore Gradle build output directory
 build
+# IntelliJ / Android Studio
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+build/
+
+# Logs, environment, temp files
+*.log
+*.env

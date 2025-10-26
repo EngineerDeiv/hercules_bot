@@ -1,23 +1,18 @@
 #language: en
 #author: BrandonGonzalezLopez
 
-Feature: Login and Authentication Functionality
+Feature: Navigation to the Bash Home section in W3Schools
   As a W3Schools user
-  I want to log in and authenticate with valid credentials
-  So that I can access the website’s features
+  I want to navigate through the main menu
+  So that I can access and verify the content of the Bash Home section
 
-  @LoginAuth
-  Scenario: Successful login with valid credentials
-    Given the user is on the W3Schools login page
-    When they enter valid credentials (email and password)
-      | Email                 | Password     |
-      | deivgonz777@gmail.com | Hero696969$  |
-    Then the system should verify that the user has been successfully authenticated and redirected to the main menu of the website
-
-  @LoginAuthInvalid
-  Scenario: Failed login with invalid credentials
-    Given the user is on the W3Schools login page
-    When they enter invalid credentials (email and password)
-      | Email                 | Password    |
-      | deivgonz777@gmail.com | Hero1234567 |
-    Then the system should display an error message indicating invalid credentials and deny access to the main menu
+#FIRST SCENARIO OF AUTOMATION TESTING
+  @NavigateToBashOK
+    Scenario: Navigate to the Bash Home section
+      Given the user is on the W3Schools main page
+      When it open the main navigation menu
+      And click on the dropdown menu on the left side
+      And select the “Bash” option from the list
+      Then the system should load the Bash page correctly
+      When the page has fully loaded, the user scrolls vertically down through the Bash Home section
+      Then the user should see detailed Bash content and verify that the Bash Home information is displayed correctly

@@ -16,3 +16,16 @@ Feature: Navigation to the Bash Home section in W3Schools
       Then the system should load the Bash page correctly
       When the page has fully loaded, the user scrolls vertically down through the Bash Home section
       Then the user should see detailed Bash content and verify that the Bash Home information is displayed correctly
+
+
+
+
+
+
+
+
+
+    
+
+
+

@@ -68,7 +68,6 @@ public class LoginStepDefinitions {
     @Then("the system should display an error message indicating invalid credentials and deny access to the main menu")
     public void the_system_should_display_an_error_message_indicating_invalid_credentials_and_deny_access_to_the_main_menu() {
         System.out.println("Verifying error message for invalid credentials");
-        // Para ahora solo verificamos que llegamos aquí - implementación básica
-        System.out.println("Error message verification completed");
+        System.out.println("Error message verification");
     }
 }

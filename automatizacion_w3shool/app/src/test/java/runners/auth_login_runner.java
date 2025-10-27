@@ -11,5 +11,4 @@ import io.cucumber.junit.CucumberOptions;
         plugin = {"pretty", "html:target/cucumber-reports/auth_login"}
 )
 public class auth_login_runner {
-
 }

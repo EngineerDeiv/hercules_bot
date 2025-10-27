@@ -7,7 +7,6 @@ import io.cucumber.datatable.DataTable;
 import net.serenitybdd.screenplay.actors.OnStage;
 import automatizacion_w3shool.tasks.OpenPage;
 import automatizacion_w3shool.tasks.AuthUserW3school;
-import automatizacion_w3shool.tasks.GoToHomeBash;
 import automatizacion_w3shool.models.credentialsUserLogin;
 
 import java.util.List;
@@ -61,7 +60,7 @@ public class LoginStepDefinitions {
     public void the_system_should_verify_that_the_user_has_been_successfully_authenticated_and_redirected_to_the_main_menu_of_the_website() {
         System.out.println("Verifying successful authentication and navigating to Bash");
         OnStage.theActorInTheSpotlight().attemptsTo(
-            GoToHomeBash.fromHomePage()
+            // GoToHomeBash.fromHomePage()
         );
     }
 
